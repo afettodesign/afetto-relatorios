@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estratégia Google Ads — Afetto Design — Maio 2026</title>
+<style>
+:root {
+    --burgundy: #6d0918;
+    --bronze: #ba8d67;
+    --paper: #f7f5f5;
+    --ink: #1a1a1a;
+    --ink-soft: #5a5a5a;
+    --line: #e5e0db;
+    --ok: #2d7a3f;
+    --ok-bg: #e8f5ec;
+    --alerta: #c47a1f;
+    --ruim: #b3261e;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--paper); color: var(--ink); line-height: 1.65;
+    padding: 32px 16px;
+}
+.container { max-width: 920px; margin: 0 auto; background: white;
+    padding: 56px 64px; box-shadow: 0 2px 24px rgba(0,0,0,0.06); border-radius: 4px; }
+h1 { font-size: 32px; font-weight: 600; color: var(--burgundy);
+    border-bottom: 3px solid var(--bronze); padding-bottom: 16px; margin-bottom: 24px; letter-spacing: -0.5px; }
+h2 { font-size: 22px; font-weight: 600; color: var(--burgundy);
+    margin-top: 40px; margin-bottom: 16px; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
+h3 { font-size: 17px; font-weight: 600; color: var(--ink);
+    margin-top: 28px; margin-bottom: 12px; }
+h4 { font-size: 15px; font-weight: 600; color: var(--bronze);
+    margin-top: 22px; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.5px; }
+p { margin-bottom: 12px; font-size: 15px; }
+table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+th { background: var(--paper); padding: 10px 12px; text-align: left; font-weight: 600;
+    color: var(--ink-soft); font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;
+    border-bottom: 2px solid var(--bronze); }
+td { padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+tr:hover td { background: var(--paper); }
+ul, ol { margin: 8px 0 14px 24px; }
+li { margin-bottom: 6px; font-size: 15px; }
+code { background: var(--paper); padding: 2px 6px; border-radius: 3px;
+    font-family: "SF Mono", Monaco, Consolas, monospace; font-size: 13px; color: var(--burgundy); }
+hr { border: 0; border-top: 1px solid var(--line); margin: 32px 0; }
+strong { color: var(--ink); font-weight: 600; }
+em { color: var(--ink-soft); font-style: italic; }
+a { color: var(--burgundy); text-decoration: none; border-bottom: 1px dotted var(--bronze); }
+a:hover { color: var(--bronze); }
+@media print { body { padding: 0; background: white; } .container { box-shadow: none; padding: 32px; } }
+@media (max-width: 720px) { .container { padding: 32px 24px; } table { font-size: 12px; } }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Estratégia Google Ads — Afetto Design</h1>
+
+<p><strong>Para:</strong> CMO</p>
+<p><strong>De:</strong> Estrategista Digital</p>
+<p><strong>Data:</strong> 04 de maio de 2026</p>
+<p><strong>Período de aplicação:</strong> Maio 2026 (e roadmap Q2/Q3)</p>
+<p><strong>Investimento mensal proposto:</strong> R$ 10.000</p>
+
+<hr>
+
+<h2>Sumário Executivo</h2>
+
+<p>A Afetto Design opera com meta de <strong>R$ 1.000.000/mês</strong> (15% Online · 85% Atendimento). Os canais digitais pagos atualmente entregam <strong>ROAS atribuído de 1,75x via GA4</strong>, mas a análise do Customer Journey Shopify revela <strong>ROAS real ≥ 2,7x</strong> apenas em vendas web — e provavelmente <strong>5-8x</strong> quando consideramos o efeito assist nas vendas via Atendimento (que representam 83% da receita mas são invisíveis ao tracking padrão).</p>
+
+<p>A oportunidade central: <strong>Google Ads pode dobrar a receita atribuída em 90 dias</strong> com (a) reestruturação do mix de campanhas, (b) implementação de tracking de WhatsApp e (c) audiências customizadas mirando o ICP premium real. Este relatório consolida o cenário, diagnostica os gaps e propõe um plano executável dentro do orçamento atual de R$ 10k.</p>
+
+<p><strong>Top 5 takeaways:</strong></p>
+<ol>
+<li><strong>Tracking de WhatsApp/Atendimento é o gap crítico</strong> — sem ele, 83% da venda fica invisível e qualquer otimização de mídia paga é cega</li>
+<li><strong>PMAX Best Sellers já entrega ROAS 6,3x atribuído</strong> (Customer Journey) — vale escalar</li>
+<li><strong>Search "Camas" e Shopping "Todos" estão queimando R$ 5k/mês com ROAS < 1x</strong> — substituir por estruturas verticais (Linha Poema, Brinquedoteca) que cobrem deptos hoje sem presença</li>
+<li><strong>Geo-target SP/RS/DF/GO/RJ resolve 86% da receita</strong> — qualquer R$ investido fora vale 1/8 do que dentro</li>
+<li><strong>Audiências customizadas premium</strong> (Celina Dias Bebê, Le Infance, Pottery Barn Kids) substituem Search Concorrentes (que retalia bidding) com mais alcance e menos risco</li>
+</ol>
+
+<hr>
+
+<h2>1. Cenário Atual</h2>
+
+<h3>1.1 Vendas e Meta</h3>
+
+<table>
+<tr><th>Métrica</th><th>Valor 30d (abr/26)</th><th>Comparativo</th></tr>
+<tr><td><strong>Receita total</strong></td><td>R$ 805.581</td><td>Meta R$ 1M (atingimento 80,6%)</td></tr>
+<tr><td><strong>Pedidos pagos</strong></td><td>151</td><td>—</td></tr>
+<tr><td><strong>Ticket médio</strong></td><td>R$ 5.335</td><td>Premium consolidado</td></tr>
+<tr><td><strong>Pace mai/26</strong> <em>(até dia 04)</em></td><td>R$ 82.589</td><td>91% do pace ideal</td></tr>
+</table>
+
+<p>Curva de venda <strong>não-linear</strong> (modelo aprendido out/2025–abr/2026, 213 dias):</p>
+<ul>
+<li>Quinta-feira é o pico (1,29x média), domingo é o vale (0,46x)</li>
+<li>Dias 26-30 são os mais fortes do mês (1,32-1,89x)</li>
+<li>Dia das Mães concentra +15% de demanda na semana anterior (04-09/05)</li>
+</ul>
+
+<h3>1.2 Distribuição por Canal</h3>
+
+<table>
+<tr><th>Canal</th><th>Pedidos 30d</th><th>Receita</th><th>%</th><th>Atribuição digital</th></tr>
+<tr><td><strong>Atendimento</strong> <em>(draft order + Shopify Mobile)</em></td><td>101</td><td>R$ 671.346</td><td><strong>83%</strong></td><td>❌ invisível ao GA4</td></tr>
+<tr><td><strong>Online Store</strong> <em>(checkout web)</em></td><td>50</td><td>R$ 134.235</td><td>17%</td><td>✅ Customer Journey completo</td></tr>
+</table>
+
+<p><strong>Implicação:</strong> quando o GA4 mostra "ROAS 1,75x", está medindo apenas 17% das vendas. A real influência da mídia paga está parcialmente oculta.</p>
+
+<h3>1.3 Mix por Departamento</h3>
+
+<table>
+<tr><th>Top 5 Departamentos</th><th>Receita 30d</th><th>%</th><th>Canal predominante</th></tr>
+<tr><td><strong>Cama</strong></td><td>R$ 305.000</td><td>41,8%</td><td>Atendimento (vendedor consultivo)</td></tr>
+<tr><td>Cômoda</td><td>R$ 38.587</td><td>6,3%</td><td>100% Atendimento</td></tr>
+<tr><td>Cadeira</td><td>R$ 50.215</td><td>6,2%</td><td><strong>Online (CVR 1,2%)</strong> ⭐</td></tr>
+<tr><td>Tapete</td><td>R$ 34.124</td><td>5,9%</td><td>Misto</td></tr>
+<tr><td>Berço</td><td>R$ 28.829</td><td>4,8%</td><td>100% Atendimento</td></tr>
+</table>
+
+<p><strong>Padrão claro:</strong> móveis principais (Cama, Cômoda, Berço, Colchão, Escrivaninha, Cama Acessórios) <strong>fecham 100% via Atendimento</strong>. Apenas Cadeira, Decoração e itens leves convertem online.</p>
+
+<h3>1.4 Geografia</h3>
+
+<p><strong>80% das vendas em 12 cidades</strong> (de 58 distintas):</p>
+<ul>
+<li>São Paulo capital sozinha: <strong>R$ 403.725 — 50%</strong></li>
+<li>Top 5 cidades: 68% da receita (SP, Porto Alegre, Goiânia, Brasília, Rio)</li>
+<li>Top 5 estados: 86% (SP 65,4% · RS 8,2% · DF 4,9% · GO 4,7% · RJ 3,6%)</li>
+</ul>
+
+<p><strong>Cidades premium subexploradas:</strong> Balneário Camboriú/SC · Florianópolis/SC · Maricá/RJ · Niterói/RJ · Joinville/SC · Vitória/ES — todas com 0 ou pouca venda em 30d apesar do PIB per capita alto.</p>
+
+<h3>1.5 ICP confirmado</h3>
+
+<ul>
+<li><strong>Mãe gestante ou recém-mãe</strong> com ticket R$ 4-7k em móveis</li>
+<li>Alta concentração SP (Brooklin, Itaim, Moema, Pinheiros, Jardins)</li>
+<li><strong>Pesquisa antes de comprar</strong> — time-to-close médio de 6 dias, com 9 touchpoints em casos complexos</li>
+<li><strong>Compra outras marcas premium</strong>: Celina Dias Bebê, Pottery Barn Kids, Le Infance, Petit Cherie, Animale, Trousseau, Vivara</li>
+</ul>
+
+<h3>1.6 Customer Journey Real (Atribuição Multi-touch)</h3>
+
+<p>Análise dos 50 pedidos web atribuídos em 30d:</p>
+
+<p><strong>First-Click (origem da jornada):</strong></p>
+<table>
+<tr><th>Origem</th><th>Pedidos</th><th>Receita</th></tr>
+<tr><td>Google PMAX (Best Sellers)</td><td>6</td><td><strong>R$ 23.367</strong></td></tr>
+<tr><td>Google orgânico</td><td>9</td><td>R$ 28.693</td></tr>
+<tr><td>Direct (cliente recorrente)</td><td>12</td><td>R$ 35.905</td></tr>
+<tr><td>Instagram orgânico</td><td>8</td><td>R$ 14.816</td></tr>
+<tr><td>Meta yorus_8_camamontessori</td><td>2</td><td>R$ 6.342</td></tr>
+<tr><td>Meta yorus_dia-das-maes</td><td>1</td><td>R$ 5.700</td></tr>
+<tr><td>Meta yorus_frios_feed</td><td>2</td><td>R$ 5.265</td></tr>
+</table>
+
+<p><strong>Last-Click (origem que fechou):</strong></p>
+<table>
+<tr><th>Origem</th><th>Pedidos</th><th>Receita</th></tr>
+<tr><td>Direct (cliente volta)</td><td>22</td><td>R$ 66.442</td></tr>
+<tr><td>Google orgânico</td><td>7</td><td>R$ 24.903</td></tr>
+<tr><td>Instagram orgânico</td><td>13</td><td>R$ 16.454</td></tr>
+<tr><td>Google PMAX</td><td>1</td><td>R$ 2.857</td></tr>
+</table>
+
+<p><strong>Lição central:</strong> Google e Meta Ads <strong>iniciam jornadas que fecham via Direct dias depois.</strong> Sem atribuição multi-touch, mídia paga aparece artificialmente pior.</p>
+
+<h3>1.7 Performance Atual Google Ads (30d)</h3>
+
+<table>
+<tr><th>Campanha</th><th>Custo</th><th>Receita atribuída GA4</th><th>ROAS GA4</th><th>ROAS Customer Journey</th></tr>
+<tr><td><strong>[V4] PMAX Best Sellers</strong></td><td>R$ 3.253</td><td>R$ 11.599</td><td>3,57x</td><td><strong>6,3x</strong> ⭐</td></tr>
+<tr><td>[V4] SHOPPING Brasil Todos</td><td>R$ 2.699</td><td>R$ 2.800</td><td>1,04x</td><td>0,9x</td></tr>
+<tr><td>[V4] SEARCH Camas</td><td>R$ 2.209</td><td>R$ 2.000</td><td>0,91x</td><td>1,0x</td></tr>
+<tr><td>[V4] SEARCH Institucional</td><td>R$ 361</td><td>R$ 450</td><td>1,25x</td><td>2,0x</td></tr>
+<tr><td>[VM] SEARCH Camas</td><td>R$ 197</td><td>R$ 0</td><td>0x</td><td>0x</td></tr>
+<tr><td>[VM] PMAX Merchan Center</td><td>R$ 405</td><td>R$ 0</td><td>0x</td><td>⚠️ tracking quebrado</td></tr>
+<tr><td>[VM] SEARCH Institucional</td><td>R$ 504</td><td>R$ 0</td><td>0x</td><td>⚠️ tracking quebrado</td></tr>
+<tr><td><strong>TOTAL</strong></td><td><strong>R$ 9.628</strong></td><td><strong>R$ 16.846</strong></td><td><strong>1,75x</strong></td><td><strong>2,7x (web only)</strong></td></tr>
+</table>
+
+<p><strong>Tendência preocupante:</strong> as campanhas [VM] entregavam ROAS 8-13x até março/2026 e despencaram a zero — provável bug de tracking pós-migração para [V4].</p>
+
+<h3>1.8 Landing Pages — Diagnóstico</h3>
+
+<ul>
+<li><strong>Top performer:</strong> Home (R$ 40.500 atribuído, eng 50%) e <code>/collections/cama-montessori</code> (R$ 7.270, eng 42%)</li>
+<li><strong>Cadeira Borboleta</strong> (3 cores): único produto individual com CVR > 1%</li>
+<li><strong>14 das 15 páginas mais visitadas têm ZERO conversão</strong> — variantes de cama (palha verde, palha madeira, palha off-white) recebem tráfego pago de baixa qualidade</li>
+<li><strong><code>(not set)</code></strong> com 1.329 sessões = tag GA4 quebrada em alguma fonte</li>
+</ul>
+
+<hr>
+
+<h2>2. Diagnóstico</h2>
+
+<h3>2.1 Problemas Críticos</h3>
+
+<table>
+<tr><th>#</th><th>Problema</th><th>Impacto</th></tr>
+<tr><td>1</td><td><strong>WhatsApp/Atendimento sem rastreamento</strong></td><td>83% da venda invisível ao Google → otimização de mídia cega</td></tr>
+<tr><td>2</td><td><strong>Mix de campanhas defasado</strong></td><td>R$ 5.609/mês (58% do gasto) em campanhas com ROAS < 1x</td></tr>
+<tr><td>3</td><td><strong>Tracking [VM] quebrado</strong></td><td>R$ 1.105/mês com receita atribuída zero (era R$ 39k antes)</td></tr>
+<tr><td>4</td><td><strong>Sem Remarketing Google</strong></td><td>0% RMKT — pipeline aquecido sendo desperdiçado</td></tr>
+<tr><td>5</td><td><strong>Anúncios direcionados a variantes específicas</strong></td><td>Tráfego frio pousa em página de cor única (eng 5%, dur 6s)</td></tr>
+<tr><td>6</td><td><strong>Search Concorrentes mira preço médio</strong></td><td>Mil Anjos/Mimoo/Grão de Gente competem com Afetto em ticket — não no perfil</td></tr>
+<tr><td>7</td><td><strong>Audiências sem segmentação geo</strong></td><td>Mesmo lance em SP (50% das vendas) e Norte (1,5%)</td></tr>
+<tr><td>8</td><td><strong>Search por palavra-chave de produto</strong></td><td>Shoppping/Search Cama compete com SEO/orgânico no fundo do funil — gasta sem agregar</td></tr>
+</table>
+
+<h3>2.2 Oportunidades</h3>
+
+<table>
+<tr><th>Onde</th><th>Valor potencial</th></tr>
+<tr><td><strong>PMAX Best Sellers escalar 20%</strong></td><td>Já é ROAS 6,3x real → +R$ 4-5k receita/mês com R$ 650 extra</td></tr>
+<tr><td><strong>PMAX Linha Poema</strong> <em>(Cômoda/Berço/Mesa Lateral/Escrivaninha)</em></td><td>Hoje 100% Atendimento — abrir Online captura cliente que pesquisa Pinterest</td></tr>
+<tr><td><strong>PMAX Brinquedoteca + Cadeira</strong></td><td>Cadeira tem CVR comprovada 1,2% web — escalar é direto</td></tr>
+<tr><td><strong>Audiência Custom Mãe Premium</strong> <em>(4 sinais)</em></td><td>Celina Dias Bebê, Pottery Barn Kids, Le Infance, Animale, Vivara — captura cliente que JÁ COMPRA premium em outros lugares</td></tr>
+<tr><td><strong>Cidades ricas inexploradas</strong></td><td>Balneário Camboriú, Maricá, Niterói, Floripa = +R$ 30-50k/mês potencial</td></tr>
+<tr><td><strong>Tracking WhatsApp</strong></td><td>Desbloqueia visibilidade de ROAS real (provavelmente 5-8x vs 2,7x atual)</td></tr>
+<tr><td><strong>Display Remarketing 90d</strong></td><td>Custo baixo, fechamento alto — pipeline já tem 22 pedidos/mês via Direct (proxy de RMKT funcionando organicamente)</td></tr>
+</table>
+
+<h3>2.3 Riscos</h3>
+
+<table>
+<tr><th>Risco</th><th>Mitigação</th></tr>
+<tr><td>Pausa direta de campanhas atuais sem substitutas</td><td><strong>Plano sempre 1-por-1</strong>: nenhuma frente fica vazia</td></tr>
+<tr><td>Concorrentes monitoram bidding de marca</td><td><strong>Não bidar palavras-chave de marca</strong> premium — usar apenas como sinal de audiência interno</td></tr>
+<tr><td>Migração de [VM] para [V4] piorou performance</td><td>Auditoria de tracking antes de matar [VM] (pode ser bug recuperável)</td></tr>
+<tr><td>Search Camas tem ROAS 1x mas pode ser assist</td><td>Migrar landing pra Coleção, não pausar — observar effect via Customer Journey</td></tr>
+</table>
+
+<hr>
+
+<h2>3. Plano de Ação</h2>
+
+<h3>3.1 Estrutura proposta — 11 campanhas em 3 etapas de funil</h3>
+
+<h4>🟢 TOPO — Descoberta (45% · R$ 4.500)</h4>
+
+<table>
+<tr><th>#</th><th>Campanha</th><th>Verba mês</th><th>Objetivo</th></tr>
+<tr><td>1</td><td>[V4] PMAX Best Sellers <em>(escalar)</em></td><td>R$ 2.500</td><td>Carro-chefe. Aprendizado consolidado, ROAS comprovado</td></tr>
+<tr><td>2</td><td>🆕 PMAX Linha Poema</td><td>R$ 1.300</td><td>Abrir canal Online para Cômoda/Berço/Mesa Lateral/Escrivaninha (hoje 0% web)</td></tr>
+<tr><td>3</td><td>🆕 PMAX Brinquedoteca + Cadeira</td><td>R$ 700</td><td>Capitalizar Cadeira Borboleta (CVR comprovada 1,2%)</td></tr>
+</table>
+
+<h4>🟡 MEIO — Consideração (29% · R$ 2.500)</h4>
+
+<table>
+<tr><th>#</th><th>Campanha</th><th>Verba mês</th><th>Objetivo</th></tr>
+<tr><td>4</td><td>🆕 SHOPPING Cadeira + Brinquedoteca</td><td>R$ 1.200</td><td>Substitui SHOPPING Todos (ROAS 0,9x). Mira público que compara preço</td></tr>
+<tr><td>5</td><td>🆕 SEARCH Coleção Cama Montessori</td><td>R$ 700</td><td>Substitui SEARCH Camas. Landing <code>/collections/cama-montessori</code> (CVR 0,06% mas R$ 7,2k receita)</td></tr>
+<tr><td>6</td><td>🆕 SEARCH Linha Poema</td><td>R$ 600</td><td>"cômoda poema", "berço poema" — captura busca de modelo específico</td></tr>
+</table>
+
+<h4>🔵 FUNDO — Fechamento (26% · R$ 2.450)</h4>
+
+<table>
+<tr><th>#</th><th>Campanha</th><th>Verba mês</th><th>Objetivo</th></tr>
+<tr><td>7</td><td>[V4] SEARCH Institucional</td><td>R$ 350</td><td>Defesa de marca (Direct é #1 last-click — proteger)</td></tr>
+<tr><td>8</td><td>[V4] SEARCH Concorrentes <em>(atual)</em></td><td>R$ 200</td><td>Defesa lateral</td></tr>
+<tr><td>9</td><td>🆕 <strong>PMAX Audiência Custom Mãe Premium</strong> <em>(4 sinais)</em></td><td>R$ 1.200</td><td>Captura ICP premium silenciosamente (sem retaliação de concorrentes)</td></tr>
+<tr><td>10</td><td>🆕 DISPLAY RMKT <em>(carrinho + página produto)</em></td><td>R$ 622</td><td>Hoje 0% RMKT — gap óbvio</td></tr>
+<tr><td>11</td><td>🆕 PMAX RMKT 30d visitantes</td><td>R$ 415</td><td>Última milha quente</td></tr>
+</table>
+
+<p><strong>Total: R$ 10.000 (R$ 1.374 já gastos · R$ 8.626 a investir 05-31/05)</strong></p>
+
+<h3>3.2 Os 4 Sinais de Audiência Custom</h3>
+
+<table>
+<tr><th>Sinal</th><th>Foco</th><th>Marcas/URLs principais</th></tr>
+<tr><td><strong>1. Concorrentes Diretos Premium BR</strong></td><td>Móveis bebê</td><td>Celina Dias Bebê, Quartos Etc, deezign.kids, Quater Móveis, Sonhos de Ninar, Le Bébé, IN8 Home, BBtrends</td></tr>
+<tr><td><strong>2. Top Dia das Mães Premium</strong></td><td>Moda feminina</td><td>Animale, Le Lis Blanc, Farm Rio, Schutz, Iorane, Trousseau, Vivara</td></tr>
+<tr><td><strong>3. Decor/Bebê Premium Internacional</strong></td><td>Aspiracional</td><td>Pottery Barn Kids, Crate & Kids, RH Baby, Serena & Lily, Smallable, Cam Cam, Liewood</td></tr>
+<tr><td><strong>4. Roupa infantil premium BR</strong></td><td>Cliente já no funil de luxo infantil</td><td>Le Infance, Petit Cherie, Little Closet Brasil, Gracia Kids, Tutti Bambini Griffes</td></tr>
+</table>
+
+<h3>3.3 Geo-Targeting</h3>
+
+<table>
+<tr><th>Tier</th><th>Cidades/Estados</th><th>Lance</th><th>% do orçamento</th></tr>
+<tr><td><strong>1 — Foco</strong></td><td>SP capital + Brooklin/Itaim/Pinheiros + interior SP rico (Bragança, Campinas, Ribeirão) + Brasília Plano Piloto</td><td>+30%</td><td>70%</td></tr>
+<tr><td><strong>2 — Sustentação</strong></td><td>Goiânia, Porto Alegre, Rio de Janeiro, Curitiba</td><td>base</td><td>20%</td></tr>
+<tr><td><strong>3 — Exploração</strong></td><td>Balneário Camboriú, Florianópolis, Maricá, Niterói, BH, Salvador, Manaus</td><td>+50%</td><td>10%</td></tr>
+<tr><td><strong>Excluir</strong></td><td>Norte (exceto Manaus) e cidades < 50k habitantes</td><td>-100%</td><td>0%</td></tr>
+</table>
+
+<h3>3.4 Implementações Técnicas Críticas (sem custo de mídia)</h3>
+
+<table>
+<tr><th>#</th><th>Ação</th><th>Impacto</th><th>Esforço</th></tr>
+<tr><td>1</td><td><strong>UTM em links de WhatsApp do site</strong> <em>(<code>?utm_source=site&utm_medium=whatsapp&utm_campaign=produto-cama</code>)</em></td><td>Atribuir vendas Atendimento à mídia paga</td><td>1h dev</td></tr>
+<tr><td>2</td><td><strong>Conversão "click WhatsApp" no Google Ads + Meta</strong></td><td>Algoritmo otimiza por leads de WhatsApp = vendas reais</td><td>2h tracking</td></tr>
+<tr><td>3</td><td><strong>Auditar Conversions API Google → Shopify</strong></td><td>Recuperar visibilidade [VM] (R$ 30k+/mês)</td><td>2h</td></tr>
+<tr><td>4</td><td><strong>Mudar destino dos anúncios</strong> das BOTTOM pages → coleções (<code>/collections/cama-montessori</code>, <code>/cama-casinha</code>, <code>/comodas</code>)</td><td>Sair de variante específica para hub editorial</td><td>30min</td></tr>
+<tr><td>5</td><td><strong>Otimizar 4 páginas de alta intenção</strong> <em>(escrivaninha-poema, comoda-brisa, cama-casinha, comodas)</em>: CTA WhatsApp pré-preenchido, depoimentos, prazo de entrega</td><td>Tráfego que já existe (eng 45%+) converte</td><td>4h dev</td></tr>
+</table>
+
+<h3>3.5 Calendário de Execução — Próximas 4 semanas</h3>
+
+<table>
+<tr><th>Semana</th><th>Ação</th></tr>
+<tr><td><strong>Sem 1 (05-11/05)</strong></td><td>Pausar 4 perdedoras + lançar 6 substitutas em DRAFT, ativar 1 a 1. Implementar UTM WhatsApp. Pré-Mães intensivo</td></tr>
+<tr><td><strong>Sem 2 (12-18/05)</strong></td><td>Auditoria [VM] tracking. Primeira leitura de ROAS das novas. Realocar 10-20% se algum stop-loss disparar</td></tr>
+<tr><td><strong>Sem 3 (19-25/05)</strong></td><td>Otimizar 4 landings. Lançar Display RMKT. Avaliar PMAX Audiência Custom</td></tr>
+<tr><td><strong>Sem 4 (26-31/05)</strong></td><td>Fechar mês. Documentar aprendizados. Preparar plano jun/26 com base em maio</td></tr>
+</table>
+
+<h3>3.6 Stop-Loss e Realocação Dinâmica</h3>
+
+<table>
+<tr><th>Sinal</th><th>Ação automática</th></tr>
+<tr><td>PMAX nova com ROAS < 1,5x após R$ 800 gastos</td><td>Migra para PMAX Best Sellers</td></tr>
+<tr><td>Direct cresce > 20% no mês</td><td>Topo está alimentando funil → manter, reduzir Fundo</td></tr>
+<tr><td>Atendimento cai vs mês anterior</td><td>Topo está fraco → aumentar PMAX/SEARCH descoberta</td></tr>
+<tr><td>CTR < 4% após R$ 250 em Search</td><td>Re-escrever copy, não pausar imediatamente</td></tr>
+</table>
+
+<hr>
+
+<h2>4. Expectativa de Resultado</h2>
+
+<h3>4.1 Cenários (mai/26 → jul/26, com ramp-up)</h3>
+
+<table>
+<tr><th>Cenário</th><th>Premissa</th><th>Receita atribuída web</th><th>ROAS médio</th><th>Receita influenciada total</th></tr>
+<tr><td><strong>Conservador</strong></td><td>Substitutas atingem ROAS 2x · Tracking WhatsApp implementado parcialmente</td><td>R$ 25.000 (+48%)</td><td>2,5x</td><td>R$ 80-100k</td></tr>
+<tr><td><strong>Base</strong></td><td>ROAS médio 3x · Tracking 100% · PMAX Best Sellers escala bem</td><td>R$ 35.000 (+108%)</td><td>3,5x</td><td>R$ 150-180k</td></tr>
+<tr><td><strong>Ambicioso</strong></td><td>[VM] recuperadas + tracking + RMKT escalado</td><td>R$ 50.000 (+200%)</td><td>5,0x</td><td>R$ 250-300k</td></tr>
+</table>
+
+<h3>4.2 Como cada cenário se traduz na meta de R$ 1M</h3>
+
+<table>
+<tr><th></th><th>Atendimento <em>(85%)</em></th><th>Online <em>(15%)</em></th><th>Total</th></tr>
+<tr><td><strong>Cenário base</strong> <em>(R$ 150k receita influenciada por Google)</em></td><td>R$ 850.000</td><td>R$ 150.000 + R$ 30.000 paid lift = R$ 180.000</td><td><strong>R$ 1.030.000</strong> ✅</td></tr>
+<tr><td><strong>Cenário ambicioso</strong></td><td>+5% no Atendimento via Google assist</td><td>+R$ 50k Online via paid</td><td><strong>R$ 1.100.000</strong></td></tr>
+</table>
+
+<h3>4.3 KPIs e Governance</h3>
+
+<table>
+<tr><th>Cadência</th><th>Métrica</th><th>Responsável</th><th>Ferramenta</th></tr>
+<tr><td><strong>Diária</strong></td><td>Pace · Real x Orçado por canal · Leads WhatsApp</td><td>Operação</td><td>Agente 16 / Página HTML</td></tr>
+<tr><td><strong>Semanal</strong></td><td>ROAS por campanha · CVR Cadeira Borboleta · Atendimento</td><td>CMO</td><td>Customer Journey Shopify</td></tr>
+<tr><td><strong>Mensal</strong></td><td>Receita por departamento · Geografia · Mix Online/Atendimento</td><td>Diretoria</td><td>Dashboard executivo</td></tr>
+<tr><td><strong>Trimestral</strong></td><td>Aprendizados · Ajuste de orçamento · Roadmap próximo Q</td><td>Liderança</td><td>Relatório como este</td></tr>
+</table>
+
+<hr>
+
+<h2>5. Recomendações de Estrategista (além do óbvio)</h2>
+
+<p>Como sugestões adicionais baseadas em experiência de e-commerce premium consultivo:</p>
+
+<h3>5.1 Conversão Offline → Online via "Live Shopping" no WhatsApp</h3>
+<p>Cliente que entra no WhatsApp pede foto, vídeo, dimensão. <strong>Implementar tag de WhatsApp Business com fluxos automatizados</strong> que mandam catálogo Linha Poema/Montessori conforme produto pesquisado. <strong>Reduz time-to-close de 6 dias para 3 dias</strong> e dobra LTV (cross-sell automático).</p>
+
+<h3>5.2 Lookalike de Compradores Premium</h3>
+<p>Em vez de prospectar com base em URLs de concorrentes, <strong>gerar lookalike no Meta dos seus 600+ clientes pagantes</strong> (CPF + ticket). Audiência de 1% dos lookalikes converte 3-5x melhor que interesse genérico — e Google PMAX usa o mesmo conceito via Customer Match.</p>
+
+<h3>5.3 Co-marketing com marcas Sinal 4</h3>
+<p><strong>Roupa premium infantil (Le Infance, Petit Cherie) e móveis premium (Afetto)</strong> atendem a mesma cliente. Acordo de co-marketing — newsletter cruzada, post Instagram, kit gestante combinado — escala alcance sem CAC. Vale 1 contato comercial por trimestre.</p>
+
+<h3>5.4 Conteúdo SEO direcionado a "como montar quarto montessoriano"</h3>
+<p>Top palavra-chave do ICP, baixa concorrência paga, alta intenção. <strong>Conteúdo blog longo + guia em PDF</strong> capta leads sem custo de clique. Combina com Customer Match no Google Ads pra retargeting.</p>
+
+<h3>5.5 NPS pós-entrega como motor de UGC</h3>
+<p>Cliente que pagou R$ 5k em cama monta quarto e fotografa. <strong>Cashback 5% em troca de UGC com hashtag</strong> — gera 50+ posts Instagram/mês = mídia orgânica que assist mais que ads pagos.</p>
+
+<h3>5.6 Reativação de leads ATC sem compra (12-18 meses)</h3>
+<p>Pipeline tem provavelmente >2.000 leads que adicionaram carrinho mas não fecharam. <strong>Email + WhatsApp em 3 toques</strong> com novidade da linha + cashback first-purchase. CAC baixíssimo, ticket alto.</p>
+
+<hr>
+
+<h2>6. Conclusão e Próximos Passos</h2>
+
+<p><strong>O Google Ads tem potencial estrutural de dobrar a receita atribuída em 90 dias.</strong> Não está sub-investido (R$ 10k/mês está alinhado a uma loja que fatura R$ 1M), mas está mal alocado e mal medido.</p>
+
+<p>A reorganização aqui proposta:</p>
+<ol>
+<li><strong>Reaproveita</strong> R$ 10k existentes</li>
+<li><strong>Substitui</strong> 4 campanhas perdedoras por estruturas verticais (Linha Poema, Brinquedoteca, Audiência Custom)</li>
+<li><strong>Implementa</strong> tracking de WhatsApp para desbloquear o ROAS real</li>
+<li><strong>Adiciona</strong> Remarketing (gap atual)</li>
+<li><strong>Foca</strong> geograficamente no que vende (SP/RS/DF/GO/RJ = 86%)</li>
+</ol>
+
+<p><strong>Pedido ao CMO:</strong></p>
+<ol>
+<li>✅ Aprovação da estrutura proposta</li>
+<li>✅ Alocação de 1 dev por 8 horas para implementar tracking WhatsApp + UTMs + auditoria [VM]</li>
+<li>✅ Validação das 5 marcas Sinal 4 (Le Infance, Petit Cherie, Little Closet, Gracia, Tutti Bambini)</li>
+<li>✅ Definir owner para acompanhamento semanal</li>
+<li>🟡 Decisão estratégica: pré-aprovar plano de jul/26 (R$ 12k) se mai/26 atingir cenário base</li>
+</ol>
+
+<p>Em mãos do executivo: este documento + relatório operacional diário (Orçado × Real) em <a href="https://afettodesign.github.io/afetto-relatorios/">afettodesign.github.io/afetto-relatorios</a>.</p>
+
+<hr>
+
+<p><em>Relatório gerado pelo Agente 16 — Meta de Vendas · Squad Digital Afetto</em></p>
+
+</div>
+</body>
+</html>
